@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) {
+  const [collapsedArcs, setCollapsedArcs] = useState({});
+  const [collapsedCharacters, setCollapsedCharacters] = useState(false);
+
+  const toggleArc = (arcId) => {
+    setCollapsedArcs(prev => ({
+      ...prev,
+      [arcId]: !prev[arcId]
+    }));
+  };
+
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h1 className="sidebar-title">Isso Mesmo que Você Ouviu</h1>
+        <h1 className="sidebar-title">Fullgor dos Deuses</h1>
         <div className="sidebar-subtitle">Painel de Campanha</div>
       </div>
 
@@ -35,19 +45,46 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
           {campaign.arcs.map(arc => (
             <li key={arc.id} style={{ marginBottom: '12px' }}>
               <div
+                onClick={() => toggleArc(arc.id)}
+                className="arc-header-toggle"
                 style={{
                   fontSize: '0.8rem',
                   fontWeight: '600',
                   color: '#8c734b',
                   textTransform: 'uppercase',
                   letterSpacing: '0.5px',
-                  padding: '4px 10px',
-                  opacity: 0.8
+                  padding: '6px 10px',
+                  opacity: 0.8,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  userSelect: 'none',
+                  borderRadius: '4px',
+                  transition: 'background-color 0.2s, opacity 0.2s'
                 }}
               >
-                {arc.title}
+                <span>{arc.title}</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{
+                    transition: 'transform 0.2s',
+                    transform: collapsedArcs[arc.id] ? 'rotate(-90deg)' : 'rotate(0deg)',
+                    flexShrink: 0,
+                    marginLeft: '8px'
+                  }}
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
               </div>
-              <ul className="sub-menu-list">
+              <ul className={`sub-menu-list collapsible-menu ${collapsedArcs[arc.id] ? 'collapsed' : ''}`}>
                 {arc.sessions.map(session => (
                   <li
                     key={session.id}
@@ -65,16 +102,38 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
 
       {/* Characters List */}
       <div className="sidebar-section">
-        <div className="sidebar-section-title">
+        <div
+          className="sidebar-section-title clickable-section-title"
+          onClick={() => setCollapsedCharacters(prev => !prev)}
+          style={{ cursor: 'pointer', userSelect: 'none', display: 'flex', alignItems: 'center' }}
+        >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
             <circle cx="9" cy="7" r="4"></circle>
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
           </svg>
-          Protagonistas
+          <span>Protagonistas</span>
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{
+              transition: 'transform 0.2s',
+              transform: collapsedCharacters ? 'rotate(-90deg)' : 'rotate(0deg)',
+              marginLeft: 'auto',
+              flexShrink: 0
+            }}
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
         </div>
-        <ul className="menu-list">
+        <ul className={`menu-list collapsible-menu ${collapsedCharacters ? 'collapsed' : ''}`}>
           {campaign.characters.map(char => (
             <li
               key={char.id}

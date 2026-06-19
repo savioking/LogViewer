@@ -208,6 +208,20 @@ body {
   font-weight: 600;
 }
 
+/* Collapsible sidebar menus */
+.collapsible-menu {
+  max-height: 400px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+.collapsible-menu.collapsed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Main Content Area */
 .main-content {
   flex-grow: 1;
@@ -689,6 +703,26 @@ body {
   border-top-color: rgba(0, 0, 0, 0.08);
 }
 
+.collapsible-filters {
+  max-height: 250px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.25s ease, 
+              padding-top 0.3s ease, 
+              margin-top 0.3s ease, 
+              border-top-color 0.3s ease;
+}
+
+.collapsible-filters.collapsed {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  border-top-color: transparent !important;
+  pointer-events: none;
+}
+
 .filter-group {
   display: flex;
   flex-wrap: wrap;
@@ -728,21 +762,29 @@ body {
 }
 
 /* Log Stream container */
+.log-stream-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  border-radius: 10px;
+}
+
+.theme-parchment .log-stream-wrapper {
+  background: var(--bg-narrator); /* Parchment color */
+}
+
 .log-stream {
   flex-grow: 1;
   overflow-y: auto;
   padding: 10px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-secondary);
-  border-radius: 10px;
+  border-radius: 9px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  position: relative;
-}
-
-.theme-parchment .log-stream {
-  background: var(--bg-narrator); /* Parchment color */
 }
 
 /* Log Entries: General Chat bubble styling */

@@ -48,7 +48,7 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
             </div>
             {char.deity && (
               <div style={{ fontSize: '0.8rem', color: 'var(--text-accent)', marginTop: '4px', fontWeight: 'bold' }}>
-                Devoto de {char.deity}
+                Devoto {char.deity == 'Panteão' ? 'do ' : 'de '} {char.deity}
               </div>
             )}
           </div>
@@ -59,8 +59,8 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
               {Object.entries(char.attributes).map(([attr, val]) => (
                 <div key={attr} className="attribute-item">
                   <span className="attr-name">{attr}</span>
-                  <span className="attr-value">{val}</span>
-                  <span className="attr-mod">{getModifier(val)}</span>
+                  <span className="attr-value">{val > 0 ? '+'+val : val}</span>
+                  {/* <span className="attr-mod">{getModifier(val)}</span> */}
                 </div>
               ))}
             </div>
@@ -79,7 +79,7 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
             {/* Render mount details if present (e.g. Valkar's unicorn) */}
             {char.mount && (
               <div className="mount-block">
-                <h4 className="mount-title">🦄 Companheiro / Montaria: {char.mount.name} ({char.mount.species})</h4>
+                <h4 className="mount-title">Companheiro: {char.mount.name} ({char.mount.species})</h4>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
                   {char.mount.description}
                 </p>

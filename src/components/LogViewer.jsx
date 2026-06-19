@@ -181,7 +181,7 @@ export default function LogViewer({ session, theme, onThemeChange }) {
         <div className="filters-section">
           {/* Senders Filter List */}
           <div className="filter-group">
-            <span className="filter-label">Narrado por:</span>
+            <span className="filter-label">Voz:</span>
             {availableActors.map(actor => (
               <span 
                 key={actor}

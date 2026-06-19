@@ -102,6 +102,22 @@ export default function CharacterAvatar({ id, size = 100 }) {
           </svg>
         );
 
+      case 'asfrig':
+        return (
+          <svg className="avatar-svg-placeholder" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="#203131ff" stroke="#00b0f0ff" strokeWidth="3" />
+            {/* Shield */}
+            <path d="M30 40 L35 55 L40 40 Z" fill="#4b6b82" stroke="#00b0f0ff" strokeWidth="3" />
+            <path d="M60 40 L65 55 L70 40 Z" fill="#4b6b82" stroke="#00b0f0ff" strokeWidth="3" />
+            <path d="M25 45 L31 55 M75 45 L69 55" stroke="#00b0f0ff" strokeWidth="2.5" />
+            {/* Ice crystal */}
+            <path d="M50 20 L40 45 H60 Z" fill="#cce7ff" stroke="#00b0f0ff" strokeWidth="3" />
+            <path d="M50 30 L45 60 L55 60 Z" fill="#87ceeb" stroke="#00b0f0ff" strokeWidth="3" />
+            <path d="M40 50 L60 50 L50 35 Z" fill="#cce7ff" stroke="#00b0f0ff" strokeWidth="3" />
+
+          </svg>
+        );
+
       case 'miriane':
         return (
           <svg className="avatar-svg-placeholder" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
