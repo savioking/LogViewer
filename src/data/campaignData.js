@@ -18,24 +18,24 @@ import fullgor_15 from './fullgor-dos-deuses/15.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
-  title: 'Tormenta20: Fullgor dos Deuses',
+  title: 'Fullgor dos Deuses',
   system: 'Tormenta20',
   description: '',
   characters: [
     {
       id: 'valkar',
       name: 'Valkar',
-      race: 'Humano',
+      race: 'Qareen',
       class: 'Paladino',
       level: 2,
       deity: 'Khalmyr',
-      attributes: { FOR: 16, DES: 10, CON: 14, INT: 10, SAB: 12, CAR: 16 },
+      attributes: { FOR: 0, DES: -1, CON: 1, INT: 4, SAB: -2, CAR: 6 },
       skills: ['Investida Montada', 'Arma Mágica', 'Instante Estóico'],
-      description: 'Valkar é um cavaleiro honrado e fervoroso que luta em nome da justiça e do deus Khalmyr. Ele cavalga Aron, seu fiel unicórnio que o acompanha nas investidas contra o mal, trazendo chamas sagradas para purificar os slarks corrompidos.',
+      description: 'Valkar é um cavaleiro honrado que luta em nome da justiça e do deus Khalmyr. Ele cavalga Aron, seu fiel unicórnio que o acompanha nas investidas contra o mal, trazendo as chamas sagradas de sua terra além das estrelas.',
       mount: {
         name: 'Aron',
-        species: 'Unicórnio',
-        description: 'Uma criatura mágica de pura bravura, capaz de reduzir de tamanho temporariamente e baforar chamas purificadoras.'
+        species: 'Montaria - Unicórnio',
+        description: 'Uma criatura mágica de pura bravura, ainda jovem, mas eternamente leal ao seu cavaleiro.'
       }
     },
     {
@@ -45,9 +45,9 @@ export const campaignData = {
       class: 'Arcanista (Feiticeiro)',
       level: 2,
       deity: '',
-      attributes: { FOR: 8, DES: 14, CON: 12, INT: 18, SAB: 14, CAR: 10 },
+      attributes: { FOR: 3, DES: 0, CON: 3, INT: -1, SAB: 0, CAR: 5 },
       skills: ['Armadura Arcana'],
-      description: 'Kaelen é um conjurador perspicaz e cauteloso. Ele carrega uma lamparina e prefere manter a distância do perigo. Usa sua inteligência e magia de proteção (como a Armadura Arcana) para salvaguardar a si e ao grupo.'
+      description: 'Kaelen é um conjurador perspicaz, mas apesar de sua sagacidade, perdeu a memória de sua vida pregressa. Desde então, age como aventureiro, tentando recobrar pedaços de quem era e descobrir um propósito.'
     },
     {
       id: 'lukian',
@@ -56,20 +56,25 @@ export const campaignData = {
       class: 'Inventor',
       level: 2,
       deity: '',
-      attributes: { FOR: 10, DES: 16, CON: 12, INT: 18, SAB: 12, CAR: 10 },
+      attributes: { FOR: -1, DES: 3, CON: 1, INT: 3, SAB: 1, CAR: 2 },
       skills: ['Comandar', 'Engenhosidade'],
-      description: 'Lukian é um sulfure (meio-demônio) tenaz e inteligente. Ele luta com uma maça pesada e carrega uma medalha da família Penthacost. Está em uma busca desesperada por seu irmão desaparecido, Luin. Ele usa sua genialidade de inventor para comandar e coordenar os ataques de seus aliados no calor do combate.'
+      description: 'Lukian é um sulfure herdeiro de uma família nobre desgraçada. Sua casa foi tomada à força com uma insurreição contra a herança demoníaca de seu sangue, uma desculpa para apanhar poder. Desde então, ele vaga pelo mundo, fazendo juz ao legado de invenções de seus pares, e tentando se reencontrar com seus irmãos perdidos.'
     },
     {
       id: 'adela',
       name: 'Adela Emyrsanis',
-      race: 'Osteon (Humano)',
+      race: 'Osteon (Sereia)',
       class: 'Barda',
       level: 2,
       deity: '',
-      attributes: { FOR: 8, DES: 16, CON: 10, INT: 14, SAB: 10, CAR: 18 },
+      attributes: { FOR: 0, DES: 2, CON: 0, INT: 1, SAB: 2, CAR: 4 },
       skills: ['Inspiração', 'Sortuda'],
-      description: 'Uma barda esqueleto (Osteon) de elegância trágica. Ela toca acordes em seu violino, que esconde uma lâmina de florete em seu braço. Sendo morta-viva, ela se recupera despejando elixires de mana diretamente em sua mandíbula exposta, e viaja com seu pequeno companheiro animal, Atchim.'
+      description: 'Uma barda osteon de elegância trágica. Nascida aristocrata de Portsmouth, era parte de uma família secreta de sereias e tritões. Fora dos planos do Conde Asloth, quando o reino se cobriu de necromancia, ela morreu... mas retornou mudada. Como morta-viva, descobriu o dom musical, que agora espalha para quem lhe der ouvidos.',
+      mount: {
+        name: 'Atchim',
+        species: 'Especial - Elemental',
+        description: 'Uma faísca misturada com fagulha. Atchim é um elemental composto da energia do fogo e da eletricidade, algo extremamente inusitado. Foi encontrado habitando um velho construto abandonado.'
+      }
     },
     {
       id: 'grakk',
@@ -78,9 +83,14 @@ export const campaignData = {
       class: 'Druida',
       level: 2,
       deity: 'Panteão',
-      attributes: { FOR: 18, DES: 10, CON: 16, INT: 10, SAB: 14, CAR: 8 },
+      attributes: { FOR: 3, DES: -1, CON: 3, INT: -1, SAB: 4, CAR: 1 },
       skills: ['Falar com Espíritos'],
-      description: 'Um construto biológico composto de tecidos corporais costurados, Grakk é um druida golem de carne. Embora possua grande força física e a capacidade de agarrar inimigos com as próprias mãos, ele possui um elo incomum com a natureza. Constantemente expressa frustração com o comportamento imprudente do grupo.'
+      description: 'Um construto biológico composto de tecidos corporais costurados, Grakk surgiu de Arton e vive por ela. Tem meses de vida, e ainda está aprendendo o que isso significa, mas brande poderes druídicos instintivos enquanto protege os vivos a todo custo.',
+      mount: {
+        name: 'Haelga',
+        species: 'Bruta',
+        description: 'Uma bárbara das uivantes, que ficou sem bando. Resolveu acompanhar os aventureiros por terem poupado sua vida. Grakk tenta levá-la para meios pacíficos.'
+      }
     }
   ],
   arcs: [
@@ -104,25 +114,25 @@ export const campaignData = {
         {
           id: 'sessao-3',
           title: '3. Nojo',
-          date: '19/02/2026',
+          date: '26/02/2026',
           logText: fullgor_03
         },
         {
           id: 'sessao-4',
           title: '4. Ímpeto',
-          date: '19/02/2026',
+          date: '05/03/2026',
           logText: fullgor_04
         },
         {
           id: 'sessao-5',
           title: '5. Anjo',
-          date: '19/02/2026',
+          date: '19/03/2026',
           logText: fullgor_05
         },
         {
           id: 'sessao-6',
           title: '6. Mestre Arsenal',
-          date: '19/02/2026',
+          date: '26/03/2026',
           logText: fullgor_06
         }
       ]
@@ -130,60 +140,60 @@ export const campaignData = {
     {
       id: 'arco-2',
       title: 'Arco II: Promessa de Cinzas',
-      description: 'Agora recrutados por Mestre Arsenal, o grupo viaja para Arvendhal em busca de um artefato perdido.',
+      description: 'Agora recrutados por Mestre Arsenal, o grupo viaja para Arvendhal em busca de um artefato roubado.',
       sessions: [
         {
           id: 'sessao-7',
           title: '7. Morto',
-          date: '12/02/2026',
+          date: '03/04/2026',
           logText: fullgor_07
         },
         {
           id: 'sessao-8',
           title: '8. Porcos',
-          date: '12/02/2026',
+          date: '09/04/2026',
           logText: fullgor_08
         },
         {
           id: 'sessao-9',
           title: '9. Armadilha',
-          date: '12/02/2026',
+          date: '16/04/2026',
           logText: fullgor_09
         },
         {
           id: 'sessao-10',
           title: '10. Mecanismo',
-          date: '12/02/2026',
+          date: '08/05/2026',
           logText: fullgor_10
         },
         {
           id: 'sessao-11',
           title: '11. Minas',
-          date: '12/02/2026',
+          date: '14/05/2026',
           logText: fullgor_11
         },
         {
           id: 'sessao-12',
           title: '12. Slarks',
-          date: '12/02/2026',
+          date: '28/05/2026',
           logText: fullgor_12
         },
         {
           id: 'sessao-13',
           title: '13. Escuridão',
-          date: '12/02/2026',
+          date: '04/06/2026',
           logText: fullgor_13
         },
         {
           id: 'sessao-14',
           title: '14. Miriane',
-          date: '12/02/2026',
+          date: '11/06/2026',
           logText: fullgor_14
         },
         {
           id: 'sessao-15',
           title: '15. Fosso',
-          date: '12/02/2026',
+          date: '18/06/2026',
           logText: fullgor_15
         },
       ]
