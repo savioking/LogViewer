@@ -30,7 +30,7 @@ export const campaignData = {
       level: 2,
       deity: 'Khalmyr',
       attributes: { FOR: 16, DES: 10, CON: 14, INT: 10, SAB: 12, CAR: 16 },
-      skills: ['Investida', 'Arma mágica', 'Combate a Cavalo'],
+      skills: ['Investida Montada', 'Arma Mágica', 'Instante Estóico'],
       description: 'Valkar é um cavaleiro honrado e fervoroso que luta em nome da justiça e do deus Khalmyr. Ele cavalga Aron, seu fiel unicórnio que o acompanha nas investidas contra o mal, trazendo chamas sagradas para purificar os slarks corrompidos.',
       mount: {
         name: 'Aron',
@@ -42,11 +42,11 @@ export const campaignData = {
       id: 'kaelen',
       name: 'Kaelen',
       race: 'Humano',
-      class: 'Arcanista (Mago)',
+      class: 'Arcanista (Feiticeiro)',
       level: 2,
-      deity: 'Wynna',
+      deity: '',
       attributes: { FOR: 8, DES: 14, CON: 12, INT: 18, SAB: 14, CAR: 10 },
-      skills: ['Armadura Arcana', 'Luz', 'Detectar Magia'],
+      skills: ['Armadura Arcana'],
       description: 'Kaelen é um conjurador perspicaz e cauteloso. Ele carrega uma lamparina e prefere manter a distância do perigo. Usa sua inteligência e magia de proteção (como a Armadura Arcana) para salvaguardar a si e ao grupo.'
     },
     {
@@ -55,9 +55,9 @@ export const campaignData = {
       race: 'Sulfure',
       class: 'Inventor',
       level: 2,
-      deity: 'Nimb',
+      deity: '',
       attributes: { FOR: 10, DES: 16, CON: 12, INT: 18, SAB: 12, CAR: 10 },
-      skills: ['Comandar', 'Remendo Rápido', 'Engenharia'],
+      skills: ['Comandar', 'Engenhosidade'],
       description: 'Lukian é um sulfure (meio-demônio) tenaz e inteligente. Ele luta com uma maça pesada e carrega uma medalha da família Penthacost. Está em uma busca desesperada por seu irmão desaparecido, Luin. Ele usa sua genialidade de inventor para comandar e coordenar os ataques de seus aliados no calor do combate.'
     },
     {
@@ -66,9 +66,9 @@ export const campaignData = {
       race: 'Osteon (Humano)',
       class: 'Barda',
       level: 2,
-      deity: 'Tenebra',
+      deity: '',
       attributes: { FOR: 8, DES: 16, CON: 10, INT: 14, SAB: 10, CAR: 18 },
-      skills: ['Canção de Ninar', 'Florete Embutido', 'Consumir Elixir'],
+      skills: ['Inspiração', 'Sortuda'],
       description: 'Uma barda esqueleto (Osteon) de elegância trágica. Ela toca acordes em seu violino, que esconde uma lâmina de florete em seu braço. Sendo morta-viva, ela se recupera despejando elixires de mana diretamente em sua mandíbula exposta, e viaja com seu pequeno companheiro animal, Atchim.'
     },
     {
@@ -77,9 +77,9 @@ export const campaignData = {
       race: 'Golem (de Carne)',
       class: 'Druida',
       level: 2,
-      deity: 'Allihanna',
+      deity: 'Panteão',
       attributes: { FOR: 18, DES: 10, CON: 16, INT: 10, SAB: 14, CAR: 8 },
-      skills: ['Agarrar', 'Fúria da Natureza', 'Constituição de Golem'],
+      skills: ['Falar com Espíritos'],
       description: 'Um construto biológico composto de tecidos corporais costurados, Grakk é um druida golem de carne. Embora possua grande força física e a capacidade de agarrar inimigos com as próprias mãos, ele possui um elo incomum com a natureza. Constantemente expressa frustração com o comportamento imprudente do grupo.'
     }
   ],

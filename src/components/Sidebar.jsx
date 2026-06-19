@@ -4,13 +4,13 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h1 className="sidebar-title">RPG Chronicles</h1>
+        <h1 className="sidebar-title">Isso Mesmo que Você Ouviu</h1>
         <div className="sidebar-subtitle">Painel de Campanha</div>
       </div>
 
       {/* Campaign Home / Dashboard Button */}
       <div className="sidebar-section">
-        <div 
+        <div
           className={`menu-item ${activeTab === 'dashboard' ? 'active' : ''}`}
           onClick={() => onSelectTab('dashboard', null)}
         >
@@ -19,7 +19,7 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
-          Geral da Campanha
+          Visão Geral
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
         <ul className="menu-list">
           {campaign.arcs.map(arc => (
             <li key={arc.id} style={{ marginBottom: '12px' }}>
-              <div 
+              <div
                 style={{
                   fontSize: '0.8rem',
                   fontWeight: '600',
@@ -49,7 +49,7 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
               </div>
               <ul className="sub-menu-list">
                 {arc.sessions.map(session => (
-                  <li 
+                  <li
                     key={session.id}
                     className={`sub-menu-item ${activeTab === 'session' && activeId === session.id ? 'active' : ''}`}
                     onClick={() => onSelectTab('session', session.id)}
@@ -76,12 +76,12 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
         </div>
         <ul className="menu-list">
           {campaign.characters.map(char => (
-            <li 
+            <li
               key={char.id}
               className={`menu-item ${activeTab === 'character' && activeId === char.id ? 'active' : ''}`}
               onClick={() => onSelectTab('character', char.id)}
             >
-              🛡️ {char.name.split(' ')[0]} 
+              🛡️ {char.name.split(' ')[0]}
               <span style={{ fontSize: '0.75rem', opacity: 0.6, marginLeft: 'auto' }}>
                 Nv {char.level} {char.class.split(' ')[0]}
               </span>

@@ -24,9 +24,9 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
   return (
     <div className="fade-in" style={{ paddingBottom: '40px' }}>
       {/* Back button */}
-      <button 
-        className="control-btn" 
-        onClick={onBack} 
+      <button
+        className="control-btn"
+        onClick={onBack}
         style={{ marginBottom: '24px', alignSelf: 'flex-start' }}
       >
         ⬅ Voltar ao Painel
@@ -90,12 +90,12 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
           {/* Signature Skills */}
           <div className="char-block">
             <h3 className="char-block-title">
-              <span>⚔️</span> Habilidades Assinatura
+              <span>⚔️</span> Habilidades Características
             </h3>
             <div className="skills-list">
               {char.skills.map((skill, idx) => (
-                <span 
-                  key={idx} 
+                <span
+                  key={idx}
                   className="skill-tag"
                   // Differentiate color depending on spell or martial skill in CSS
                   data-skill={skill}
