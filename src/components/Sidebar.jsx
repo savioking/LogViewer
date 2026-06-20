@@ -14,7 +14,7 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h1 className="sidebar-title">Fullgor dos Deuses</h1>
+        <h1 className="sidebar-title">{campaign.title}</h1>
         <div className="sidebar-subtitle">Painel de Campanha</div>
       </div>
 

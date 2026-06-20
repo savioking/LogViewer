@@ -29,21 +29,21 @@ export default function Dashboard({ campaign, onSelectTab }) {
           <span className="stat-icon">🗺️</span>
           <div className="stat-info">
             <span className="stat-value">{totalArcs}</span>
-            <span className="stat-label">Arcos Narrativos</span>
+            <span className="stat-label">Aventuras</span>
           </div>
         </div>
         <div className="stat-card">
           <span className="stat-icon">📜</span>
           <div className="stat-info">
             <span className="stat-value">{totalSessions}</span>
-            <span className="stat-label">Sessões Gravadas</span>
+            <span className="stat-label">Sessões</span>
           </div>
         </div>
         <div className="stat-card">
           <span className="stat-icon">⭐</span>
           <div className="stat-info">
             <span className="stat-value">2</span>
-            <span className="stat-label">Nível do Grupo</span>
+            <span className="stat-label">Nível Médio</span>
           </div>
         </div>
       </div>

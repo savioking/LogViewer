@@ -72,7 +72,7 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
           {/* Biography */}
           <div className="char-block">
             <h3 className="char-block-title">
-              <span>📖</span> Biografia & Histórico
+              <span>📖</span> Biografia
             </h3>
             <p className="char-desc-text">{char.description}</p>
 
@@ -104,6 +104,20 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
                 </span>
               ))}
             </div>
+          </div>
+          {/* Personal Story */}
+          <div className="char-block">
+            <h3 className="char-block-title">
+              <span>🗺️</span> História Pessoal
+            </h3>
+            {char.story.map((entry, idx) => (
+              <div key={idx} className="mount-block">
+                <h4 className="mount-title">{entry.title}</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                  {entry.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

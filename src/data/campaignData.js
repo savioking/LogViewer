@@ -36,7 +36,8 @@ export const campaignData = {
         name: 'Aron',
         species: 'Montaria - Unicórnio',
         description: 'Uma criatura mágica de pura bravura, ainda jovem, mas eternamente leal ao seu cavaleiro.'
-      }
+      },
+      story: []
     },
     {
       id: 'kaelen',
@@ -47,7 +48,18 @@ export const campaignData = {
       deity: '',
       attributes: { FOR: 3, DES: 0, CON: 3, INT: -1, SAB: 0, CAR: 5 },
       skills: ['Armadura Arcana'],
-      description: 'Kaelen é um conjurador perspicaz, mas apesar de sua sagacidade, perdeu a memória de sua vida pregressa. Desde então, age como aventureiro, tentando recobrar pedaços de quem era e descobrir um propósito.'
+      description: 'Kaelen é um conjurador perspicaz, mas apesar de sua sagacidade, perdeu a memória de sua vida pregressa. Desde então, age como aventureiro, tentando recobrar pedaços de quem era e descobrir um propósito.',
+      story: [
+        {
+          title: 'Despertar',
+          text: 'A primeira memória de Kaelen é de acordar em uma caverna escura, repleta de morte e desolação. Ele fugiu e eventualmente encontrou uma alma solidária em Brunna Martelo-de-Carvalho, uma anã que o acolheu enquanto entendia o que havia acontecido.'
+        },
+        {
+          title: 'Fragmentos de Aprendizado',
+          text: 'Ao ouvir falar da divindade Beluhga, Kaelen recobra memórias de estar em uma sala de aula aprendendo sobre magia, em especial, sobre os Dragões-Rei e como eles representam aspectos da magia arcana. Kaelen estava entediado, pois lembrava de saber disso tudo a partir da sua família, e preferia provar a sopa da qual sentia um cheiro delicioso.'
+        }
+      ]
+      
     },
     {
       id: 'lukian',
@@ -58,7 +70,17 @@ export const campaignData = {
       deity: '',
       attributes: { FOR: -1, DES: 3, CON: 1, INT: 3, SAB: 1, CAR: 2 },
       skills: ['Comandar', 'Engenhosidade'],
-      description: 'Lukian é um sulfure herdeiro de uma família nobre desgraçada. Sua casa foi tomada à força com uma insurreição contra a herança demoníaca de seu sangue, uma desculpa para apanhar poder. Desde então, ele vaga pelo mundo, fazendo juz ao legado de invenções de seus pares, e tentando se reencontrar com seus irmãos perdidos.'
+      description: 'Lukian é um sulfure herdeiro de uma família nobre desgraçada. Sua casa foi tomada à força com uma insurreição contra a herança demoníaca de seu sangue, uma desculpa para apanhar poder. Desde então, ele vaga pelo mundo, fazendo juz ao legado de invenções de seus pares, e tentando se reencontrar com seus irmãos perdidos.',
+      story: [
+        {
+          title: 'A Queda dos Penthacost',
+          text: 'A união entre o pai de Lukian, um inventor renomado, e sua mãe, uma nativa demoníaca de um dos mundos divinos, sempre foi rejeitada por sua família tradicional. Lukian e seus irmãos sofreram a pior perda de suas vidas quando os autômatos da residência de família se viraram contra seus pais. Seu tio Vortigan culpou a influência demoníaca, mas Lukian sabia que ele foi o culpado ao vislumbrar sua marca pessoal nos autômatos. Ele foi preso para ser silenciado, mas conseguiu escapar com dois de seus irmãos, Luin e Mirin. Eles se separaram para despistar os perseguidores, e Lukian nunca mais os viu.'
+        },
+        {
+          title: 'Sigilo Abandonado',
+          text: 'Lukian descobriu de um mercador viajante um dos brasões de sua família, algo que apenas ele ou seus irmãos possuiriam. O mercador disse que recebeu de um homem como Lukian, sulfure, em uma cidade próxima chamada Arvendhal.'
+        }
+      ]
     },
     {
       id: 'adela',
@@ -74,7 +96,8 @@ export const campaignData = {
         name: 'Atchim',
         species: 'Especial - Elemental',
         description: 'Uma faísca misturada com fagulha. Atchim é um elemental composto da energia do fogo e da eletricidade, algo extremamente inusitado. Foi encontrado habitando um velho construto abandonado.'
-      }
+      },
+      story: []
     },
     {
       id: 'grakk',
@@ -90,7 +113,8 @@ export const campaignData = {
         name: 'Haelga',
         species: 'Bruta',
         description: 'Uma bárbara das uivantes, que ficou sem bando. Resolveu acompanhar os aventureiros por terem poupado sua vida. Grakk tenta levá-la para meios pacíficos.'
-      }
+      },
+      story: []
     }
   ],
   arcs: [
