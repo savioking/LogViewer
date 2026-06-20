@@ -47,7 +47,7 @@ export const campaignData = {
       level: 2,
       deity: '',
       attributes: { FOR: 3, DES: 0, CON: 3, INT: -1, SAB: 0, CAR: 5 },
-      skills: ['Armadura Arcana'],
+      skills: ['Armadura Arcana', 'Sono'],
       description: 'Kaelen é um conjurador perspicaz, mas apesar de sua sagacidade, perdeu a memória de sua vida pregressa. Desde então, age como aventureiro, tentando recobrar pedaços de quem era e descobrir um propósito.',
       story: [
         {
