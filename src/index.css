@@ -89,8 +89,66 @@ body {
 /* App Layout */
 .app-container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
+  flex-direction: column;
+}
+
+@media(min-width: 769px) {
+  .app-container {
+    flex-direction: row;
+  }
+}
+
+/* Mobile Header */
+.mobile-header {
+  display: none;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border-primary);
+  color: var(--text-accent);
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.mobile-menu-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-right: 16px;
+}
+
+.mobile-header-title {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Mobile Overlay */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-overlay.open {
+  display: block;
+  opacity: 1;
 }
 
 /* Sidebar Styling */
@@ -104,10 +162,26 @@ body {
   position: sticky;
   top: 0;
   height: 100vh;
-  z-index: 10;
+  z-index: 25;
   padding: 24px;
   overflow-y: auto;
   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-close-btn {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.sidebar-close-btn:hover {
+  color: var(--text-accent);
 }
 
 .sidebar-header {
@@ -615,7 +689,7 @@ body {
 .log-viewer-container {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 105px);
 }
 
 /* Controls Bar */
@@ -1084,15 +1158,26 @@ body {
 }
 
 @media(max-width: 768px) {
-  .app-container {
-    flex-direction: column;
+  .mobile-header {
+    display: flex;
   }
+  
   .sidebar {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 2px solid var(--border-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    border-right: 2px solid var(--border-primary);
   }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close-btn {
+    display: block;
+  }
+
   .main-content {
     padding: 20px;
   }

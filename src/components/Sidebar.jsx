@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) {
+export default function Sidebar({ activeTab, activeId, onSelectTab, campaign, isOpen, onClose }) {
   const [collapsedArcs, setCollapsedArcs] = useState({});
   const [collapsedCharacters, setCollapsedCharacters] = useState(false);
 
@@ -12,7 +12,14 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign }) 
   };
 
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <button className="sidebar-close-btn" onClick={onClose} aria-label="Close Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
       <div className="sidebar-header">
         <h1 className="sidebar-title">{campaign.title}</h1>
         <div className="sidebar-subtitle">Painel de Campanha</div>
