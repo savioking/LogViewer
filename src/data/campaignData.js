@@ -97,7 +97,12 @@ export const campaignData = {
         species: 'Especial - Elemental',
         description: 'Uma faísca misturada com fagulha. Atchim é um elemental composto da energia do fogo e da eletricidade, algo extremamente inusitado. Foi encontrado habitando um velho construto abandonado.'
       },
-      story: []
+      story: [
+        {
+          title: 'Fuga do Necromante',
+          text: 'Ficar em Portsmouth, agora Aslothia, não era uma opção, mesmo após sua transformação. Tentando escapar, Adela conheceu ???, uma outra fugitiva do reino. Devota de Arsenal, ela a convidou a se tornar parte dos esforços do deus, e a instruiu que fosse até Deheon.'
+        }
+      ]
     },
     {
       id: 'grakk',
@@ -114,7 +119,16 @@ export const campaignData = {
         species: 'Bruta',
         description: 'Uma bárbara das uivantes, que ficou sem bando. Resolveu acompanhar os aventureiros por terem poupado sua vida. Grakk tenta levá-la para meios pacíficos.'
       },
-      story: []
+      story: [
+        {
+          title: 'Nascimento',
+          text: 'Grakk surgiu numa floresta do noroeste de Deheon sem aparente explicação. Brotou do chão como um vegetal, mas ergueu-se como gente. Perambulou sem rumo apreciando aquilo que aprenderia a chamar de vida, até encontrar um grupo de aventureiros.'
+        },
+        {
+          title: 'Arsenal',
+          text: 'Após desbravar uma cripta tomada por uma ameaça a própria Arton, Grakk foi convidado a se tornar um "soldado" na guerra por vir de Mestre Arsenal. O Deus da guerra lhe conferiu sua bênção, após parecer familiar com quem ele era.'
+        }
+      ]
     }
   ],
   arcs: [
