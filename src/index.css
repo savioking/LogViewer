@@ -692,6 +692,12 @@ body {
   height: calc(100vh - 105px);
 }
 
+@media(min-width: 769px) {
+  .log-viewer-container {
+    height: calc(100vh - 80px);
+  }
+}
+
 /* Controls Bar */
 .log-controls {
   background: var(--bg-card);

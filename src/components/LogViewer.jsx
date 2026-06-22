@@ -7,6 +7,7 @@ export default function LogViewer({ session, theme, onThemeChange }) {
   const [activeActors, setActiveActors] = useState([]);
   const [showTurns, setShowTurns] = useState(true);
   const [hideActions, setHideActions] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollContainerRef = useRef(null);
 
@@ -146,12 +147,29 @@ export default function LogViewer({ session, theme, onThemeChange }) {
   return (
     <div className="log-viewer-container fade-in">
       {/* Control Panel */}
-      <div className="log-controls">
-        {/* Row 1: Search & Theme Toggles */}
-        <div className="controls-row-1">
-          <div className="search-input-wrapper">
-            <input 
-              type="text" 
+      <div className="log-controls" style={{ gap: isMenuOpen ? '16px' : '0' }}>
+        {/* Toggle Header */}
+        <div
+          className="controls-header"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}
+          title={isMenuOpen ? "Ocultar menu" : "Expandir menu"}
+        >
+          <span style={{ fontFamily: 'var(--font-title)', color: 'var(--text-accent)', fontWeight: 'bold' }}>
+            ⚙️ Aparência e Filtros
+          </span>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+            {isMenuOpen ? '▲ Ocultar' : '▼ Expandir'}
+          </span>
+        </div>
+
+        {isMenuOpen && (
+          <>
+            {/* Row 1: Search & Theme Toggles */}
+            <div className="controls-row-1" style={{ marginTop: '16px' }}>
+              <div className="search-input-wrapper">
+                <input
+                  type="text"
               className="search-input"
               placeholder="Buscar termos, diálogos ou ações..." 
               value={searchText}
@@ -201,23 +219,25 @@ export default function LogViewer({ session, theme, onThemeChange }) {
             )}
           </div>
 
-          {/* Visibility Switches */}
-          <div className="filter-group">
-            <span className="filter-label">Visualização:</span>
-            <button 
-              className={`control-btn ${showTurns ? 'active' : ''}`}
-              onClick={() => setShowTurns(prev => !prev)}
-            >
-              {showTurns ? '✓ Exibir Banners de Turno' : '✗ Ocultar Banners de Turno'}
-            </button>
-            <button 
-              className={`control-btn ${hideActions ? 'active' : ''}`}
-              onClick={() => setHideActions(prev => !prev)}
-            >
-              {hideActions ? '✗ Ocultando Ações (Itálico)' : '✓ Exibindo Ações (Itálico)'}
-            </button>
-          </div>
-        </div>
+              {/* Visibility Switches */}
+              <div className="filter-group">
+                <span className="filter-label">Visualização:</span>
+                <button
+                  className={`control-btn ${showTurns ? 'active' : ''}`}
+                  onClick={() => setShowTurns(prev => !prev)}
+                >
+                  {showTurns ? '✓ Exibir Banners de Turno' : '✗ Ocultar Banners de Turno'}
+                </button>
+                <button
+                  className={`control-btn ${hideActions ? 'active' : ''}`}
+                  onClick={() => setHideActions(prev => !prev)}
+                >
+                  {hideActions ? '✗ Ocultando Ações (Itálico)' : '✓ Exibindo Ações (Itálico)'}
+                </button>
+              </div>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Log Feed stream */}
