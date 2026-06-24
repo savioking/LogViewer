@@ -236,5 +236,28 @@ export const campaignData = {
         },
       ]
     }
+  ],
+  mapPoints: [
+    {
+      id: 'p1',
+      x: 20.8,
+      y: 53,
+      title: 'Gorendill',
+      description: 'Uma vila breve nos limites de Deheon com as Uivantes.'
+    },
+    {
+      id: 'p2',
+      x: 23,
+      y: 50,
+      title: 'Cripta de Keen',
+      description: 'Um mítico templo do Deus da Guerra, oculto nos morros gélidos do oeste de Deheon.'
+    },
+    {
+      id: 'p3',
+      x: 30,
+      y: 55,
+      title: 'Arvendhal',
+      description: 'Uma antiga cidade mineradora, esquecida quando as minas secaram.'
+    }
   ]
 };

@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import CharacterDetail from './components/CharacterDetail';
 import LogViewer from './components/LogViewer';
+import MapViewer from './components/MapViewer';
 import { campaignData } from './data/campaignData';
 
 export default function App() {
@@ -85,6 +86,10 @@ export default function App() {
             theme={theme}
             onThemeChange={setTheme}
           />
+        )}
+
+        {activeTab === 'map' && (
+          <MapViewer campaign={campaignData} />
         )}
       </main>
     </div>
