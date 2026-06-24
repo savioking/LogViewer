@@ -250,14 +250,14 @@ export const campaignData = {
       x: 23,
       y: 50,
       title: 'Cripta de Keen',
-      description: 'Um mítico templo do Deus da Guerra, oculto nos morros gélidos do oeste de Deheon.'
+      description: 'Um mítico templo do antigo deus da guerra, oculto nos morros gélidos do oeste de Deheon.'
     },
     {
       id: 'p3',
       x: 30,
       y: 55,
       title: 'Arvendhal',
-      description: 'Uma antiga cidade mineradora, esquecida quando as minas secaram.'
+      description: 'Uma velha cidade mineradora, esquecida quando as minas secaram. O povo carrancudo é rancoroso com a coroa.'
     }
   ]
 };
