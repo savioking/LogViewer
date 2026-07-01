@@ -16,6 +16,7 @@ import fullgor_13 from './fullgor-dos-deuses/13.txt?raw';
 import fullgor_14 from './fullgor-dos-deuses/14.txt?raw';
 import fullgor_15 from './fullgor-dos-deuses/15.txt?raw';
 import fullgor_16 from './fullgor-dos-deuses/16.txt?raw';
+import fullgor_17 from './fullgor-dos-deuses/17.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -238,8 +239,14 @@ export const campaignData = {
         {
           id: 'sessao-16',
           title: '16. Estranho',
-          date: '26/06/2026',
+          date: '25/06/2026',
           logText: fullgor_16
+        },
+        {
+          id: 'sessao-17',
+          title: '17. Traição',
+          date: '26/06/2026',
+          logText: fullgor_17
         },
       ]
     }
