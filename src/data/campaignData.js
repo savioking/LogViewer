@@ -20,6 +20,7 @@ import fullgor_17 from './fullgor-dos-deuses/17.txt?raw';
 import fullgor_18 from './fullgor-dos-deuses/18.txt?raw';
 import fullgor_19 from './fullgor-dos-deuses/19.txt?raw';
 import fullgor_20 from './fullgor-dos-deuses/20.txt?raw';
+import fullgor_21 from './fullgor-dos-deuses/21.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -260,14 +261,20 @@ export const campaignData = {
         {
           id: 'sessao-19',
           title: '19. Promessa das Cinzas',
-          date: '03/07/2026',
+          date: '10/07/2026',
           logText: fullgor_19
         },
         {
           id: 'sessao-20',
           title: '20. Avatar',
-          date: '03/07/2026',
+          date: '11/07/2026',
           logText: fullgor_20
+        },
+        {
+          id: 'sessao-21',
+          title: '21. Avatar',
+          date: '17/07/2026',
+          logText: fullgor_21
         },
       ]
     }
