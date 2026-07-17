@@ -4,6 +4,8 @@ import Dashboard from './components/Dashboard';
 import CharacterDetail from './components/CharacterDetail';
 import LogViewer from './components/LogViewer';
 import MapViewer from './components/MapViewer';
+import ToolsIndex from './components/ToolsIndex';
+import AttributeCalculator from './components/AttributeCalculator';
 import { campaignData } from './data/campaignData';
 
 export default function App() {
@@ -90,6 +92,14 @@ export default function App() {
 
         {activeTab === 'map' && (
           <MapViewer campaign={campaignData} />
+        )}
+
+        {activeTab === 'tools' && (
+          activeId === 'attribute-calculator' ? (
+            <AttributeCalculator onBack={() => handleSelectTab('tools', null)} />
+          ) : (
+            <ToolsIndex onSelectTool={(toolId) => handleSelectTab('tools', toolId)} />
+          )
         )}
       </main>
     </div>
