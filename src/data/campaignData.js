@@ -63,7 +63,11 @@ export const campaignData = {
         {
           title: 'Fragmentos de Aprendizado',
           text: 'Ao ouvir falar da divindade Beluhga, Kaelen recobra memórias de estar em uma sala de aula aprendendo sobre magia, em especial, sobre os Dragões-Rei e como eles representam aspectos da magia arcana. Kaelen estava entediado, pois lembrava de saber disso tudo a partir da sua família, e preferia provar a sopa da qual sentia um cheiro delicioso.'
-        }
+        },
+        {
+          title: 'Fraternidade Lembrada',
+          text: 'Ao observar o reencontro de Lukian e Luin, Kaelen recebeu um lampejo de memória do seu passado novamente. Ainda criança, ele brincava de pega-pega com seu irmão mais novo pelos salões suntuosos do que parecia ser um palácio.'
+        },
       ]
       
     },
@@ -85,6 +89,10 @@ export const campaignData = {
         {
           title: 'Sigilo Abandonado',
           text: 'Lukian descobriu de um mercador viajante um dos brasões de sua família, algo que apenas ele ou seus irmãos possuiriam. O mercador disse que recebeu de um homem como Lukian, sulfure, em uma cidade próxima chamada Arvendhal.'
+        },
+        {
+          title: 'O Terceiro Mais Velho',
+          text: 'Nas minas abandonadas de Arvendhal, Lukian encontrou seu irmão Luin preso em cristal vermelho. Ao se aproximar, a magia o libertou do estado de estase. Luin foi preso como forma de defesa quando sua vida foi ameaçada por Miriane, que ia sacrificá-lo para um ritual profano.'
         }
       ]
     },
