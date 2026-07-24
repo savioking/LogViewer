@@ -21,6 +21,7 @@ import fullgor_18 from './fullgor-dos-deuses/18.txt?raw';
 import fullgor_19 from './fullgor-dos-deuses/19.txt?raw';
 import fullgor_20 from './fullgor-dos-deuses/20.txt?raw';
 import fullgor_21 from './fullgor-dos-deuses/21.txt?raw';
+import fullgor_22 from './fullgor-dos-deuses/22.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -268,7 +269,7 @@ export const campaignData = {
         },
         {
           id: 'sessao-19',
-          title: '19. Promessa das Cinzas',
+          title: '19. Promessa',
           date: '10/07/2026',
           logText: fullgor_19
         },
@@ -280,9 +281,22 @@ export const campaignData = {
         },
         {
           id: 'sessao-21',
-          title: '21. Avatar',
+          title: '21. Cinzas',
           date: '17/07/2026',
           logText: fullgor_21
+        },
+      ]
+    },
+    {
+      id: 'arco-2',
+      title: 'Arco III: ???',
+      description: 'A cidade de Izmorra, famosa por sua joalheria sagrada, ficou silenciosa. É preciso investigar o que cessou as comunicações.',
+      sessions: [
+        {
+          id: 'sessao-22',
+          title: '22. Retorno',
+          date: '23/07/2026',
+          logText: fullgor_22
         },
       ]
     }
