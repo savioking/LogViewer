@@ -21,6 +21,8 @@ import fullgor_18 from './fullgor-dos-deuses/18.txt?raw';
 import fullgor_19 from './fullgor-dos-deuses/19.txt?raw';
 import fullgor_20 from './fullgor-dos-deuses/20.txt?raw';
 import fullgor_21 from './fullgor-dos-deuses/21.txt?raw';
+import fullgor_21_5 from './fullgor-dos-deuses/21-5.txt?raw';
+
 import fullgor_22 from './fullgor-dos-deuses/22.txt?raw';
 
 export const campaignData = {
@@ -288,10 +290,16 @@ export const campaignData = {
       ]
     },
     {
-      id: 'arco-2',
+      id: 'arco-3',
       title: 'Arco III: ???',
       description: 'A cidade de Izmorra, famosa por sua joalheria sagrada, ficou silenciosa. É preciso investigar o que cessou as comunicações.',
       sessions: [
+        {
+          id: 'entre-aventuras-1',
+          title: 'Entre Aventuras',
+          date: '23/07/2026',
+          logText: fullgor_21_5
+        },
         {
           id: 'sessao-22',
           title: '22. Retorno',
