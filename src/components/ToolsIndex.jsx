@@ -5,7 +5,7 @@ export default function ToolsIndex({ onSelectTool }) {
     {
       id: 'attribute-calculator',
       name: 'Calculadora de Atributos',
-      description: 'Distribua pontos e adicione modificadores de raça para calcular seus atributos.',
+      description: 'Calcule os atributos de um personagem pela regra de pontos e com modificadores raciais.',
       icon: '🧮'
     }
   ];
