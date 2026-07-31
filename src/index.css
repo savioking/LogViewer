@@ -1505,7 +1505,7 @@ body {
   }
   .timeline-item.left .timeline-icon,
   .timeline-item.right .timeline-icon {
-    left: 4px;
+    left: -45px;
     right: auto;
   }
 }
