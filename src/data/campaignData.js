@@ -24,6 +24,7 @@ import fullgor_21 from './fullgor-dos-deuses/21.txt?raw';
 import fullgor_21_5 from './fullgor-dos-deuses/21-5.txt?raw';
 
 import fullgor_22 from './fullgor-dos-deuses/22.txt?raw';
+import fullgor_23 from './fullgor-dos-deuses/23.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -305,6 +306,12 @@ export const campaignData = {
           title: '22. Retorno',
           date: '23/07/2026',
           logText: fullgor_22
+        },
+        {
+          id: 'sessao-23',
+          title: '23. Marcha',
+          date: '30/07/2026',
+          logText: fullgor_23
         },
       ]
     }
