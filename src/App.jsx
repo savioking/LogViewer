@@ -6,6 +6,7 @@ import LogViewer from './components/LogViewer';
 import MapViewer from './components/MapViewer';
 import ToolsIndex from './components/ToolsIndex';
 import AttributeCalculator from './components/AttributeCalculator';
+import Timeline from './components/Timeline';
 import { campaignData } from './data/campaignData';
 
 export default function App() {
@@ -92,6 +93,10 @@ export default function App() {
 
         {activeTab === 'map' && (
           <MapViewer campaign={campaignData} />
+        )}
+
+        {activeTab === 'timeline' && (
+          <Timeline />
         )}
 
         {activeTab === 'tools' && (

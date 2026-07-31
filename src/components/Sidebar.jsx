@@ -52,6 +52,17 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign, is
         </div>
 
         <div
+          className={`menu-item ${activeTab === 'timeline' ? 'active' : ''}`}
+          onClick={() => onSelectTab('timeline', null)}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          Linha do Tempo
+        </div>
+
+        <div
           className={`menu-item ${activeTab === 'tools' ? 'active' : ''}`}
           onClick={() => onSelectTab('tools', null)}
         >

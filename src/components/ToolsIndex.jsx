@@ -11,7 +11,7 @@ export default function ToolsIndex({ onSelectTool }) {
   ];
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '1200px', margin: '0 auto' }} class="fade-in">
       <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--text-accent)', marginBottom: '24px', borderBottom: '1px solid var(--border-primary)', paddingBottom: '12px' }}>
         Ferramentas da Campanha
       </h2>
