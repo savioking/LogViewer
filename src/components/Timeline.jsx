@@ -1,5 +1,5 @@
 import React from 'react';
-import { timeLineData } from '../data/timeLineData';
+import { timeLineData, campaignData } from '../data/timeLineData';
 
 const getIcon = (type) => {
   switch (type) {
@@ -30,19 +30,26 @@ export default function Timeline() {
     groupedEvents[event.year].push(event);
   });
 
+  const getCampaignInfo = (campId) => {
+    return campaignData.find(c => c.id === campId) || null;
+  };
+
   return (
     <div className="timeline-container fade-in">
       <div className="timeline-header-fixed">
         <div className="dashboard-header">
-          <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--text-accent)', marginBottom: '24px', borderBottom: '1px solid var(--border-primary)', paddingBottom: '12px' }}>
+          <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--text-accent)', marginBottom: '12px', borderBottom: '1px solid var(--border-primary)', paddingBottom: '12px' }}>
             Linha do Tempo
           </h2>
         </div>
 
-        {/* <div className="timeline-legend">
-          <span>🌍 Evento Global</span>
-          <span>⚔️ Evento da Campanha</span>
-          <span>📌 Evento Miscelâneo</span>
+        {/* <div className="timeline-legend" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center', marginBottom: '16px' }}>
+          {campaignData.map(camp => (
+            <div key={camp.id} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: camp.color, display: 'inline-block' }}></span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{camp.nome}</span>
+            </div>
+          ))}
         </div> */}
       </div>
 
@@ -60,6 +67,9 @@ export default function Timeline() {
               {/* Events for this year */}
               {groupedEvents[year].map((event, index) => {
                 const isLeft = index % 2 === 0;
+                const campaign = event.campId ? getCampaignInfo(event.campId) : null;
+                const cardStyle = campaign ? { borderLeft: `4px solid ${campaign.color}` } : {};
+
                 return (
                   <div key={event.id} className={`timeline-item ${isLeft ? 'left' : 'right'}`}>
                     <div className="timeline-content">
@@ -67,8 +77,13 @@ export default function Timeline() {
                         {getIcon(event.iconType)}
                       </div>
 
-                      <div className="timeline-card panel">
+                      <div className="timeline-card panel" style={cardStyle}>
                         <h3 className="timeline-card-title">{event.title}</h3>
+                        {/* {campaign && (
+                          <div style={{ fontSize: '0.7rem', color: campaign.color, marginBottom: '6px', fontWeight: 'bold' }}>
+                            {campaign.nome}
+                          </div>
+                        )} */}
                         <p className="timeline-card-desc">{event.description}</p>
                       </div>
                     </div>
