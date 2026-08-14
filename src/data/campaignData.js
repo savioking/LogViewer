@@ -39,7 +39,7 @@ export const campaignData = {
       name: 'Valkar',
       race: 'Qareen',
       class: 'Paladino',
-      level: 2,
+      level: 3,
       deity: 'Khalmyr',
       attributes: { FOR: 0, DES: -1, CON: 1, INT: 4, SAB: -2, CAR: 6 },
       skills: ['Investida Montada', 'Arma Mágica', 'Instante Estóico'],
@@ -56,7 +56,7 @@ export const campaignData = {
       name: 'Kaelen',
       race: 'Humano',
       class: 'Arcanista (Feiticeiro)',
-      level: 2,
+      level: 3,
       deity: '',
       attributes: { FOR: 3, DES: 0, CON: 3, INT: -1, SAB: 0, CAR: 5 },
       skills: ['Armadura Arcana', 'Sono'],
@@ -74,6 +74,10 @@ export const campaignData = {
           title: 'Fraternidade Lembrada',
           text: 'Ao observar o reencontro de Lukian e Luin, Kaelen recebeu um lampejo de memória do seu passado novamente. Ainda criança, ele brincava de pega-pega com seu irmão mais novo pelos salões suntuosos do que parecia ser um palácio.'
         },
+        {
+          title: 'Herdeiro do Gelo',
+          text: 'Buscando por mais de suas memórias, Kaelen encontrou Percival, um goblin contrabandista de informações. Estudando seus tomos antigos sobre heráldicas, despertou uma memória onde ele e sua família compareciam a uma cerimônia de lealdade à Shirsyll, uma dragoa nobre e que também era sua ancestral.'
+        },
       ]
       
     },
@@ -82,10 +86,10 @@ export const campaignData = {
       name: 'Lukian',
       race: 'Sulfure',
       class: 'Inventor',
-      level: 2,
+      level: 3,
       deity: '',
       attributes: { FOR: -1, DES: 3, CON: 1, INT: 3, SAB: 1, CAR: 2 },
-      skills: ['Comandar', 'Engenhosidade'],
+      skills: ['Comandar', 'Engenhosidade', 'Engenhocas'],
       description: 'Lukian é um sulfure herdeiro de uma família nobre desgraçada. Sua casa foi tomada à força com uma insurreição contra a herança demoníaca de seu sangue, uma desculpa para apanhar poder. Desde então, ele vaga pelo mundo, fazendo juz ao legado de invenções de seus pares, e tentando se reencontrar com seus irmãos perdidos.',
       story: [
         {
@@ -107,10 +111,10 @@ export const campaignData = {
       name: 'Adela Emyrsanis',
       race: 'Osteon (Sereia)',
       class: 'Barda',
-      level: 2,
+      level: 3,
       deity: '',
       attributes: { FOR: 0, DES: 2, CON: 0, INT: 1, SAB: 2, CAR: 4 },
-      skills: ['Inspiração', 'Sortuda'],
+      skills: ['Inspiração', 'Sortuda', 'Perdição'],
       description: 'Uma barda osteon de elegância trágica. Nascida aristocrata de Portsmouth, era parte de uma família secreta de sereias e tritões. Fora dos planos do Conde Asloth, quando o reino se cobriu de necromancia, ela morreu... mas retornou mudada. Como morta-viva, descobriu o dom musical, que agora espalha para quem lhe der ouvidos.',
       mount: {
         name: 'Atchim',
@@ -129,15 +133,15 @@ export const campaignData = {
       name: 'Grakk',
       race: 'Golem (de Carne)',
       class: 'Druida',
-      level: 2,
+      level: 3,
       deity: 'Panteão',
       attributes: { FOR: 3, DES: -1, CON: 3, INT: -1, SAB: 4, CAR: 1 },
-      skills: ['Falar com Espíritos'],
+      skills: ['Falar com Espíritos','Controlar Plantas'],
       description: 'Um construto biológico composto de tecidos corporais costurados, Grakk surgiu de Arton e vive por ela. Tem meses de vida, e ainda está aprendendo o que isso significa, mas brande poderes druídicos instintivos enquanto protege os vivos a todo custo.',
       mount: {
         name: 'Haelga',
         species: 'Bruta',
-        description: 'Uma bárbara das uivantes, que ficou sem bando. Resolveu acompanhar os aventureiros por terem poupado sua vida. Grakk tenta levá-la para meios pacíficos.'
+        description: 'Uma bárbara das uivantes, que ficou sem bando. Resolveu acompanhar os aventureiros por terem poupado sua vida. Grakk tenta levá-la para meios pacíficos. Atualmente está cuidando de Miriane em sua prisão nos arredores de Arvendhal.'
       },
       story: [
         {
@@ -147,6 +151,10 @@ export const campaignData = {
         {
           title: 'Arsenal',
           text: 'Após desbravar uma cripta tomada por uma ameaça a própria Arton, Grakk foi convidado a se tornar um "soldado" na guerra por vir de Mestre Arsenal. O Deus da guerra lhe conferiu sua bênção, após parecer familiar com quem ele era.'
+        },
+        {
+          title: 'Thyatis',
+          text: 'Enquanto seus companheiros participavam do julgamento de Miriane, corrompida pelo Fullgor, Grakk se viu conversando com uma ave oportuna. Após uma decisão favorável à vida de Miriane, o pássaro revela que ensinou a Grakk tempos atrás um conceito: A Esperança.'
         }
       ]
     }
@@ -351,6 +359,13 @@ export const campaignData = {
       y: 55,
       title: 'Arvendhal',
       description: 'Uma velha cidade mineradora, esquecida quando as minas secaram. O povo carrancudo é rancoroso com a coroa.'
+    },
+    {
+      id: 'p4',
+      x: 38,
+      y: 58,
+      title: 'Izmorra',
+      description: 'Antiga cidade de anões e medusas, famosa pelo seu artesanato religioso. Ficou silenciosa subitamente meses atrás.'
     }
   ]
 };
