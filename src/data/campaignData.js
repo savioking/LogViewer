@@ -124,7 +124,7 @@ export const campaignData = {
       story: [
         {
           title: 'Fuga do Necromante',
-          text: 'Ficar em Portsmouth, agora Aslothia, não era uma opção, mesmo após sua transformação. Tentando escapar, Adela conheceu ???, uma outra fugitiva do reino. Devota de Arsenal, ela a convidou a se tornar parte dos esforços do deus, e a instruiu que fosse até Deheon.'
+          text: 'Ficar em Portsmouth, agora Aslothia, não era uma opção, mesmo após sua transformação. Tentando escapar, Adela conheceu Selisse, uma outra fugitiva do reino. Devota de Arsenal, ela a convidou a se tornar parte dos esforços do deus, e a instruiu que fosse até Deheon.'
         }
       ]
     },
