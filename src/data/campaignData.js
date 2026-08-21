@@ -27,6 +27,7 @@ import fullgor_22 from './fullgor-dos-deuses/22.txt?raw';
 import fullgor_23 from './fullgor-dos-deuses/23.txt?raw';
 import fullgor_24 from './fullgor-dos-deuses/24.txt?raw';
 import fullgor_25 from './fullgor-dos-deuses/25.txt?raw';
+import fullgor_26 from './fullgor-dos-deuses/26.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -59,7 +60,7 @@ export const campaignData = {
       level: 3,
       deity: '',
       attributes: { FOR: 3, DES: 0, CON: 3, INT: -1, SAB: 0, CAR: 5 },
-      skills: ['Armadura Arcana', 'Sono'],
+      skills: ['Armadura Arcana', 'Sono', 'Dardo Gélido'],
       description: 'Kaelen é um conjurador perspicaz, mas apesar de sua sagacidade, perdeu a memória de sua vida pregressa. Desde então, age como aventureiro, tentando recobrar pedaços de quem era e descobrir um propósito.',
       story: [
         {
@@ -334,6 +335,12 @@ export const campaignData = {
           title: '25. Ambição e Guerra',
           date: '13/08/2026',
           logText: fullgor_25
+        },
+        {
+          id: 'sessao-26',
+          title: '26. Portões',
+          date: '20/08/2026',
+          logText: fullgor_26
         },
       ]
     }
