@@ -28,6 +28,7 @@ import fullgor_23 from './fullgor-dos-deuses/23.txt?raw';
 import fullgor_24 from './fullgor-dos-deuses/24.txt?raw';
 import fullgor_25 from './fullgor-dos-deuses/25.txt?raw';
 import fullgor_26 from './fullgor-dos-deuses/26.txt?raw';
+import fullgor_27 from './fullgor-dos-deuses/27.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -341,6 +342,12 @@ export const campaignData = {
           title: '26. Portões',
           date: '20/08/2026',
           logText: fullgor_26
+        },
+        {
+          id: 'sessao-27',
+          title: '27. Glória à Humanidade',
+          date: '27/08/2026',
+          logText: fullgor_27
         },
       ]
     }
