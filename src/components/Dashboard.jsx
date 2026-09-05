@@ -42,7 +42,7 @@ export default function Dashboard({ campaign, onSelectTab }) {
         <div className="stat-card">
           <span className="stat-icon">⭐</span>
           <div className="stat-info">
-            <span className="stat-value">2</span>
+            <span className="stat-value">3</span>
             <span className="stat-label">Nível Médio</span>
           </div>
         </div>

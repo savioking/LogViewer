@@ -29,6 +29,7 @@ import fullgor_24 from './fullgor-dos-deuses/24.txt?raw';
 import fullgor_25 from './fullgor-dos-deuses/25.txt?raw';
 import fullgor_26 from './fullgor-dos-deuses/26.txt?raw';
 import fullgor_27 from './fullgor-dos-deuses/27.txt?raw';
+import fullgor_28 from './fullgor-dos-deuses/28.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -348,6 +349,12 @@ export const campaignData = {
           title: '27. Glória à Humanidade',
           date: '27/08/2026',
           logText: fullgor_27
+        },
+        {
+          id: 'sessao-28',
+          title: '28. Puristas',
+          date: '02/09/2026',
+          logText: fullgor_28
         },
       ]
     }
