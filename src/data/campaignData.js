@@ -30,6 +30,7 @@ import fullgor_25 from './fullgor-dos-deuses/25.txt?raw';
 import fullgor_26 from './fullgor-dos-deuses/26.txt?raw';
 import fullgor_27 from './fullgor-dos-deuses/27.txt?raw';
 import fullgor_28 from './fullgor-dos-deuses/28.txt?raw';
+import fullgor_29 from './fullgor-dos-deuses/29.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -305,7 +306,7 @@ export const campaignData = {
     },
     {
       id: 'arco-3',
-      title: 'Arco III: ???',
+      title: 'Arco III: Glória à Humanidade',
       description: 'A cidade de Izmorra, famosa por sua joalheria sagrada, ficou silenciosa. É preciso investigar o que cessou as comunicações.',
       sessions: [
         {
@@ -355,6 +356,12 @@ export const campaignData = {
           title: '28. Puristas',
           date: '02/09/2026',
           logText: fullgor_28
+        },
+        {
+          id: 'sessao-29',
+          title: '29. Puristas',
+          date: '10/09/2026',
+          logText: fullgor_29
         },
       ]
     }
