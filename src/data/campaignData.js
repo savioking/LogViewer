@@ -32,6 +32,7 @@ import fullgor_27 from './fullgor-dos-deuses/27.txt?raw';
 import fullgor_28 from './fullgor-dos-deuses/28.txt?raw';
 import fullgor_29 from './fullgor-dos-deuses/29.txt?raw';
 import fullgor_30 from './fullgor-dos-deuses/30.txt?raw';
+import fullgor_31 from './fullgor-dos-deuses/31.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -369,6 +370,12 @@ export const campaignData = {
           title: '30. Tensão',
           date: '17/09/2026',
           logText: fullgor_30
+        },
+        {
+          id: 'sessao-31',
+          title: '31. Garganta',
+          date: '24/09/2026',
+          logText: fullgor_31
         },
       ]
     }
