@@ -263,6 +263,22 @@ export default function LogViewer({ session, theme, onThemeChange }) {
                 <div key={entry.id} className="log-entry log-entry-narrator">
                   <div className="entry-lines">
                     {entry.lines.map((line, lIdx) => {
+                      if (line.isImage) {
+                        return (
+                          <div key={lIdx} className={line.speaker ? "npc-speech-block" : "entry-line log-image-wrapper"}>
+                            {line.speaker && (
+                              <div className="npc-speech-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                <CharacterAvatar id={line.speaker} size={20} />
+                                <strong>{line.speaker}</strong>
+                              </div>
+                            )}
+                            <div className="log-image-frame">
+                              <img src={line.url} alt="Attachment" loading="lazy" />
+                            </div>
+                          </div>
+                        );
+                      }
+                      
                       if (line.speaker) {
                         return (
                           <div key={lIdx} className="npc-speech-block">
@@ -310,11 +326,22 @@ export default function LogViewer({ session, theme, onThemeChange }) {
                   </div>
                   <div className="entry-bubble">
                     <div className="entry-lines">
-                      {entry.lines.map((line, lIdx) => (
-                        <div key={lIdx} className="entry-line">
-                          {line.segments.map((seg, sIdx) => renderSegment(seg, sIdx))}
-                        </div>
-                      ))}
+                      {entry.lines.map((line, lIdx) => {
+                        if (line.isImage) {
+                          return (
+                            <div key={lIdx} className="entry-line log-image-wrapper">
+                              <div className="log-image-frame">
+                                <img src={line.url} alt="Attachment" loading="lazy" />
+                              </div>
+                            </div>
+                          );
+                        }
+                        return (
+                          <div key={lIdx} className="entry-line">
+                            {line.segments.map((seg, sIdx) => renderSegment(seg, sIdx))}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

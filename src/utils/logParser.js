@@ -120,6 +120,16 @@ export function parseLogLine(lineText) {
     }
   }
 
+  // Check if it's an image block
+  const imageMatch = text.match(/\[§I\s+(.*?)\]/);
+  if (imageMatch) {
+    return {
+      speaker: lineSpeaker,
+      isImage: true,
+      url: imageMatch[1].trim()
+    };
+  }
+
   // 2. Determine parsing style:
   // - Style A (has circle bullet points '●'): Circle bullet points enclose action descriptions, dashes start speech.
   // - Style B (no circles): Dashes alternate speech and action descriptions (e.g., — Fala — Ação — Fala).
