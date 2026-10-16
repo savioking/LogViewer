@@ -96,7 +96,7 @@ export default function Dashboard({ campaign, onSelectTab }) {
             marginBottom: '16px'
           }}
         >
-          Linha do Tempo de Crônicas
+          Sessões de Jogo
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {campaign.arcs.map(arc => (
@@ -142,7 +142,7 @@ export default function Dashboard({ campaign, onSelectTab }) {
                   >
                     <div>
                       <div style={{ fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '4px' }}>
-                        📜 {session.title}
+                        {session.title}
                       </div>
                       <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
                         Jogada em {session.date}

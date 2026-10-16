@@ -35,6 +35,7 @@ import fullgor_30 from './fullgor-dos-deuses/30.txt?raw';
 import fullgor_31 from './fullgor-dos-deuses/31.txt?raw';
 import fullgor_32 from './fullgor-dos-deuses/32.txt?raw';
 import fullgor_33 from './fullgor-dos-deuses/33.txt?raw';
+import fullgor_34 from './fullgor-dos-deuses/34.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -44,6 +45,7 @@ export const campaignData = {
   characters: [
     {
       id: 'valkar',
+      icon: '⚖',
       name: 'Valkar',
       race: 'Qareen',
       class: 'Paladino',
@@ -61,6 +63,7 @@ export const campaignData = {
     },
     {
       id: 'kaelen',
+      icon: '❄',
       name: 'Kaelen',
       race: 'Humano',
       class: 'Arcanista (Feiticeiro)',
@@ -86,11 +89,16 @@ export const campaignData = {
           title: 'Herdeiro do Gelo',
           text: 'Buscando por mais de suas memórias, Kaelen encontrou Percival, um goblin contrabandista de informações. Estudando seus tomos antigos sobre heráldicas, despertou uma memória onde ele e sua família compareciam a uma cerimônia de lealdade à Shirsyll, uma dragoa nobre e que também era sua ancestral.'
         },
+        {
+          title: 'Memória de Dor',
+          text: 'Ao testemunhar as tendências torturadoras contra os puristas derrotados em Izmorra, Kaelen lembrou-se de quando ele próprio foi torturado. Na ocasião, um homem de cabelos brancos impediu a tortura de continuar, um dos seus próprios captores.'
+        }
       ]
       
     },
     {
       id: 'lukian',
+      icon: '⚙',
       name: 'Lukian',
       race: 'Sulfure',
       class: 'Inventor',
@@ -116,6 +124,7 @@ export const campaignData = {
     },
     {
       id: 'adela',
+      icon: '💀',
       name: 'Adela Emyrsanis',
       race: 'Osteon (Sereia)',
       class: 'Barda',
@@ -138,6 +147,7 @@ export const campaignData = {
     },
     {
       id: 'grakk',
+      icon: '❤',
       name: 'Grakk',
       race: 'Golem (de Carne)',
       class: 'Druida',
@@ -390,6 +400,12 @@ export const campaignData = {
           title: '33. Ruína',
           date: '08/10/2026',
           logText: fullgor_33
+        },
+        {
+          id: 'sessao-34',
+          title: '34. Contenda',
+          date: '08/10/2026',
+          logText: fullgor_34
         },
       ]
     }

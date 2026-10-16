@@ -72,7 +72,7 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
           {/* Biography */}
           <div className="char-block">
             <h3 className="char-block-title">
-              <span>📖</span> Biografia
+               Biografia
             </h3>
             <p className="char-desc-text">{char.description}</p>
 
@@ -90,7 +90,7 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
           {/* Signature Skills */}
           <div className="char-block">
             <h3 className="char-block-title">
-              <span>⚔️</span> Habilidades Características
+               Habilidades Características
             </h3>
             <div className="skills-list">
               {char.skills.map((skill, idx) => (
@@ -108,7 +108,7 @@ export default function CharacterDetail({ charId, campaign, onBack }) {
           {/* Personal Story */}
           <div className="char-block">
             <h3 className="char-block-title">
-              <span>🗺️</span> História Pessoal
+               História Pessoal
             </h3>
             {char.story.map((entry, idx) => (
               <div key={idx} className="mount-block">

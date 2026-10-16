@@ -131,7 +131,7 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign, is
                     className={`sub-menu-item ${activeTab === 'session' && activeId === session.id ? 'active' : ''}`}
                     onClick={() => onSelectTab('session', session.id)}
                   >
-                    📜 {session.title}
+                    {session.title}
                   </li>
                 ))}
               </ul>
@@ -180,7 +180,7 @@ export default function Sidebar({ activeTab, activeId, onSelectTab, campaign, is
               className={`menu-item ${activeTab === 'character' && activeId === char.id ? 'active' : ''}`}
               onClick={() => onSelectTab('character', char.id)}
             >
-              🛡️ {char.name.split(' ')[0]}
+              {char.name.split(' ')[0]}
               <span style={{ fontSize: '0.75rem', opacity: 0.6, marginLeft: 'auto' }}>
                 Nv {char.level} {char.class.split(' ')[0]}
               </span>
