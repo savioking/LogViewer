@@ -7,11 +7,17 @@ export default function ToolsIndex({ onSelectTool }) {
       name: 'Calculadora de Atributos',
       description: 'Calcule os atributos de um personagem pela regra de pontos e com modificadores raciais.',
       icon: '🧮'
+    },
+    {
+      id: 'distinctions',
+      name: 'Catálogo de Distinções',
+      description: 'Consulte todas as distinções de Arton, seus requisitos de admissão, marcas de distinção e árvores de poderes.',
+      icon: '📜'
     }
   ];
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto' }} class="fade-in">
+    <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="fade-in">
       <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--text-accent)', marginBottom: '24px', borderBottom: '1px solid var(--border-primary)', paddingBottom: '12px' }}>
         Ferramentas da Campanha
       </h2>

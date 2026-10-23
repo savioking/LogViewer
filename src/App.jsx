@@ -7,6 +7,7 @@ import MapViewer from './components/MapViewer';
 import ToolsIndex from './components/ToolsIndex';
 import AttributeCalculator from './components/AttributeCalculator';
 import Timeline from './components/Timeline';
+import DistinctionsCatalog from './components/DistinctionsCatalog';
 import { campaignData } from './data/campaignData';
 
 export default function App() {
@@ -102,6 +103,8 @@ export default function App() {
         {activeTab === 'tools' && (
           activeId === 'attribute-calculator' ? (
             <AttributeCalculator onBack={() => handleSelectTab('tools', null)} />
+          ) : activeId === 'distinctions' ? (
+            <DistinctionsCatalog onBack={() => handleSelectTab('tools', null)} />
           ) : (
             <ToolsIndex onSelectTool={(toolId) => handleSelectTab('tools', toolId)} />
           )
