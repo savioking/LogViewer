@@ -2630,7 +2630,7 @@ body {
 .bestiary-faction-badge[data-faction*="Abissal"] {
   background: rgba(122, 40, 255, 0.15);
   color: #f36dff;
-  border-color: rgba(174, 0, 255, 0.4);
+  border-color: rgba(199, 79, 255, 0.4);
 }
 
 .bestiary-faction-badge[data-faction*="Fullgor"],

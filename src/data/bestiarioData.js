@@ -125,30 +125,12 @@ export const bestiarioData = [
     id: 'idolo-fullgori',
     name: 'Ídolo Fullgori',
     faction: ['Purista','Fullgor'],
-    type: 'Humanoide',
+    type: 'Espírito',
     level: 3,
     image: 'idolo-fullgori.png', // Sem imagem por padrão (quadrado vazio)
-    description: 'Um Frade desgarrado da Supremacia, que liderou uma célula da Pureza Divina sorrateiramente por Deheon até encontrarem seu destino em Izmorra.',
-    skills: [
-      {
-        title: 'Ódio Puro',
-        text: 'Quando seguindo as ordens de um superior, é inabalável em sua força de vontade. Além disso, como todo purista, carrega ódio mortal contra não humanos.'
-      },
-      {
-        title: 'Magia Divina',
-        text: 'Como frade da igreja da Pureza Divina, Kallhast conjura magias. É capaz de conjurar armas espectrais, auras de proteção e orações de combate. Também utiliza de magias para subterfúgio como Silêncio.'
-      },
-    ],
-    lore: [
-      {
-        title: 'A Marcha sobre Izmorra',
-        text: 'Durante o Arco III, uma célula da Pureza Divina invadiu e tomou Izmorra debaixo do nariz do Reinado, cortando a comunicação com o resto do reino.'
-      },
-      {
-        title: 'Ídolo Fullgori',
-        text: 'Kallhast usou os artesãos prisioneiros para fabricar um ídolo de pedra unindo Valkaria e Arsenal em um amálgama profano. Ele invocou o Fullgor para habitar o Ídolo através de sacrifícios. Inicialmente pretendia sacrificar os prisioneiros, mas a interferência dos campeões de arsenal o forçou a sacrificar seus aliados e, por fim, a si mesmo.'
-      }
-    ]
+    description: '????',
+    skills: [],
+    lore: []
   },
   {
     id: 'lagarto-persegue',
