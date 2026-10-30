@@ -8,6 +8,7 @@ import ToolsIndex from './components/ToolsIndex';
 import AttributeCalculator from './components/AttributeCalculator';
 import Timeline from './components/Timeline';
 import DistinctionsCatalog from './components/DistinctionsCatalog';
+import Bestiary from './components/Bestiary';
 import { campaignData } from './data/campaignData';
 
 export default function App() {
@@ -98,6 +99,14 @@ export default function App() {
 
         {activeTab === 'timeline' && (
           <Timeline />
+        )}
+
+        {activeTab === 'bestiario' && (
+          <Bestiary
+            selectedThreatId={activeId}
+            onSelectThreat={(threatId) => handleSelectTab('bestiario', threatId)}
+            onBack={() => handleSelectTab('bestiario', null)}
+          />
         )}
 
         {activeTab === 'tools' && (
