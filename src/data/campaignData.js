@@ -37,6 +37,7 @@ import fullgor_32 from './fullgor-dos-deuses/32.txt?raw';
 import fullgor_33 from './fullgor-dos-deuses/33.txt?raw';
 import fullgor_34 from './fullgor-dos-deuses/34.txt?raw';
 import fullgor_35 from './fullgor-dos-deuses/35.txt?raw';
+import fullgor_36 from './fullgor-dos-deuses/36.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -413,6 +414,12 @@ export const campaignData = {
           title: '35. Kallhast',
           date: '22/10/2026',
           logText: fullgor_35
+        },
+        {
+          id: 'sessao-36',
+          title: '36. Ídolo',
+          date: '29/10/2026',
+          logText: fullgor_36
         },
       ]
     }
