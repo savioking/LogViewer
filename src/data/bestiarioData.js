@@ -128,9 +128,23 @@ export const bestiarioData = [
     type: 'Espírito',
     level: 3,
     image: 'idolo-fullgori.png', // Sem imagem por padrão (quadrado vazio)
-    description: '????',
-    skills: [],
-    lore: []
+    description: 'Uma estátua esculpida em efígie profana, retratando uma união entre Valkaria e Arsenal como um só ser. Animada pelo Fullgor, se alimenta das almas sacrificadas para sua vinda, e atua como soldado místico purista da Igreja da Pureza Divina.',
+    skills: [
+      {
+        title: 'Arsenal Fulgurante',
+        text: 'Como se emprestasse das próprias armarias dos deuses que representa, o Ídolo materializa gigantes armas espirituais de pura energia mágica para realizar golpes amplos.'
+      },
+      {
+        title: 'Sinos Infinitos',
+        text: 'O Ídolo explode em pura essência mágica aniquilando tudo e todos ao seu redor. Nem mesmo quaisquer aliados que pensem que estão do seu lado são poupados.'
+      },
+    ],
+    lore: [
+      {
+        title: 'Queda do Ídolo',
+        text: 'Após devastar o antigo templo anão no topo da montanha de Izmorra, o Ídolo foi detido e destruído pelos campeões de Arsenal. A luta não foi fácil, mas foi uma vitória, e o povo de Izmorra finalmente estava livre.'
+      },
+    ]
   },
   {
     id: 'lagarto-persegue',
