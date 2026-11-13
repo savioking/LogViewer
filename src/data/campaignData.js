@@ -39,6 +39,7 @@ import fullgor_34 from './fullgor-dos-deuses/34.txt?raw';
 import fullgor_35 from './fullgor-dos-deuses/35.txt?raw';
 import fullgor_36 from './fullgor-dos-deuses/36.txt?raw';
 import fullgor_37 from './fullgor-dos-deuses/37.txt?raw';
+import fullgor_38 from './fullgor-dos-deuses/38.txt?raw';
 
 export const campaignData = {
   id: 'tormenta-keen',
@@ -145,6 +146,10 @@ export const campaignData = {
         {
           title: 'Fuga do Necromante',
           text: 'Ficar em Portsmouth, agora Aslothia, não era uma opção, mesmo após sua transformação. Tentando escapar, Adela conheceu Selisse, uma outra fugitiva do reino. Devota de Arsenal, ela a convidou a se tornar parte dos esforços do deus, e a instruiu que fosse até Deheon.'
+        },
+        {
+          title: 'Proposta Fortuita',
+          text: 'Adela se reencontrou com Selisse após os eventos em Izmorra. A golem congratulou Adela pelo sucesso até então e ofereceu para que a barda se juntasse ao seu grupo, outros agentes de Arsenal. Adela, no entanto, negou, preferindo ficar na companhia do grupo de Thalgrim.'
         }
       ]
     },
@@ -428,6 +433,12 @@ export const campaignData = {
           date: '05/11/2026',
           logText: fullgor_37
         },
+        {
+          id: 'sessao-38',
+          title: '38. Jabuti',
+          date: '13/11/2026',
+          logText: fullgor_38
+        },
       ]
     }
   ],
@@ -458,7 +469,7 @@ export const campaignData = {
       x: 38,
       y: 58,
       title: 'Izmorra',
-      description: 'Antiga cidade de anões e medusas, famosa pelo seu artesanato religioso. Ficou silenciosa subitamente meses atrás.'
+      description: 'Antiga cidade de anões e medusas, famosa pelo seu artesanato religioso. Foi salva de uma invasão purista pelos campeões de Arsenal.'
     }
   ]
 };
