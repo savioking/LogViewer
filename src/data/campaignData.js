@@ -41,6 +41,12 @@ import fullgor_36 from './fullgor-dos-deuses/36.txt?raw';
 import fullgor_37 from './fullgor-dos-deuses/37.txt?raw';
 import fullgor_38 from './fullgor-dos-deuses/38.txt?raw';
 
+import fullgor_39_5 from './fullgor-dos-deuses/39-5.txt?raw';
+import fullgor_39 from './fullgor-dos-deuses/39.txt?raw';
+
+import mapDeheon from './map/deheon.jpg';
+import mapBase from './map/base.png';
+
 export const campaignData = {
   id: 'tormenta-keen',
   title: 'Fullgor dos Deuses',
@@ -440,36 +446,100 @@ export const campaignData = {
           logText: fullgor_38
         },
       ]
+    },
+    {
+      id: 'arco-4',
+      title: 'Arco IV: ???',
+      description: 'Thalgrim previu um grande perigo acometendo a cidade de Flor-de-Luna. Os campeões de Arsenal tentarão evitar o desastre na cidade natal de Valkar.',
+      sessions: [
+        {
+          id: 'entre-aventuras-2',
+          title: 'Entre Aventuras',
+          date: '19/11/2026',
+          logText: fullgor_39_5
+        },
+        {
+          id: 'sessao-39',
+          title: '39. Presságio',
+          date: '19/11/2026',
+          logText: fullgor_39
+        },
+      ]
     }
   ],
-  mapPoints: [
+  maps: [
     {
-      id: 'p1',
-      x: 20.8,
-      y: 53,
-      title: 'Gorendill',
-      description: 'Uma vila breve nos limites de Deheon com as Uivantes.'
+      id: 'deheon',
+      title: 'Deheon',
+      description: 'O coração do Reinado.',
+      image: mapDeheon,
+      points: [
+        {
+          id: 'p1',
+          x: 20.8,
+          y: 53,
+          title: 'Gorendill',
+          description: 'Uma vila breve nos limites de Deheon com as Uivantes.'
+        },
+        {
+          id: 'p2',
+          x: 23,
+          y: 50,
+          title: 'Cripta de Keen',
+          description: 'Um mítico templo do antigo deus da guerra, oculto nos morros gélidos do oeste de Deheon.'
+        },
+        {
+          id: 'p3',
+          x: 30,
+          y: 55,
+          title: 'Arvendhal',
+          description: 'Uma velha cidade mineradora, esquecida quando as minas secaram. O povo carrancudo é rancoroso com a coroa.'
+        },
+        {
+          id: 'p4',
+          x: 38,
+          y: 58,
+          title: 'Izmorra',
+          description: 'Antiga cidade de anões e medusas, famosa pelo seu artesanato religioso. Foi salva de uma invasão purista pelos campeões de Arsenal.'
+        }
+      ]
     },
     {
-      id: 'p2',
-      x: 23,
-      y: 50,
-      title: 'Cripta de Keen',
-      description: 'Um mítico templo do antigo deus da guerra, oculto nos morros gélidos do oeste de Deheon.'
-    },
-    {
-      id: 'p3',
-      x: 30,
-      y: 55,
-      title: 'Arvendhal',
-      description: 'Uma velha cidade mineradora, esquecida quando as minas secaram. O povo carrancudo é rancoroso com a coroa.'
-    },
-    {
-      id: 'p4',
-      x: 38,
-      y: 58,
-      title: 'Izmorra',
-      description: 'Antiga cidade de anões e medusas, famosa pelo seu artesanato religioso. Foi salva de uma invasão purista pelos campeões de Arsenal.'
+      id: 'base',
+      title: 'Base Tartaruga',
+      description: 'Um Kaiju na forma de uma tartaruga gigante.',
+      image: mapBase,
+      points: [
+        {
+          id: 'b-p1',
+          x: 34,
+          y: 47,
+          title: 'Calabouço',
+          description: 'Uma construção de pedra fria e rígida, com camas de palha igualmente duras para prisioneiros. Um escritório e sala de interrogatório completam a prisão.'
+        },
+        {
+          id: 'b-p2',
+          x: 72,
+          y: 50,
+          title: 'Gabinete Místico',
+          description: 'Um salão com um acervo sobre artes arcanas e instrumentos para experimentação e estudo.'
+        },
+        {
+          id: 'b-p3',
+          x: 54,
+          y: 77,
+          title: 'Oratório',
+          description: 'Um altar com um mural aos vinte deuses do panteão, alguns mais destacados que outros, e uma vista para o horizonte além da tartaruga.'
+        },
+        {
+          id: 'b-p4',
+          x: 55,
+          y: 35,
+          title: 'Vergel',
+          description: 'Um pequeno arvoredo nas costas da tartaruga. É possível estender redes entre os troncos e relaxar sentindo o cheiro da grama e das folhas.'
+        },
+      ]
     }
-  ]
+  ],
+  mapPoints: []
 };
