@@ -43,6 +43,7 @@ import fullgor_38 from './fullgor-dos-deuses/38.txt?raw';
 
 import fullgor_39_5 from './fullgor-dos-deuses/39-5.txt?raw';
 import fullgor_39 from './fullgor-dos-deuses/39.txt?raw';
+import fullgor_40 from './fullgor-dos-deuses/40.txt?raw';
 
 import mapDeheon from './map/deheon.jpg';
 import mapBase from './map/base.png';
@@ -59,7 +60,7 @@ export const campaignData = {
       name: 'Valkar',
       race: 'Qareen',
       class: 'Paladino',
-      level: 3,
+      level: 4,
       deity: 'Khalmyr',
       attributes: { FOR: 0, DES: -1, CON: 1, INT: 4, SAB: -2, CAR: 6 },
       skills: ['Investida Montada', 'Arma Mágica', 'Instante Estóico'],
@@ -77,7 +78,7 @@ export const campaignData = {
       name: 'Kaelen',
       race: 'Humano',
       class: 'Arcanista (Feiticeiro)',
-      level: 3,
+      level: 4,
       deity: '',
       attributes: { FOR: 3, DES: 0, CON: 3, INT: -1, SAB: 0, CAR: 5 },
       skills: ['Armadura Arcana', 'Sono', 'Dardo Gélido'],
@@ -112,7 +113,7 @@ export const campaignData = {
       name: 'Lukian',
       race: 'Sulfure',
       class: 'Inventor',
-      level: 3,
+      level: 4,
       deity: '',
       attributes: { FOR: -1, DES: 3, CON: 1, INT: 3, SAB: 1, CAR: 2 },
       skills: ['Comandar', 'Engenhosidade', 'Engenhocas'],
@@ -138,7 +139,7 @@ export const campaignData = {
       name: 'Adela Emyrsanis',
       race: 'Osteon (Sereia)',
       class: 'Barda',
-      level: 3,
+      level: 4,
       deity: '',
       attributes: { FOR: 0, DES: 2, CON: 0, INT: 1, SAB: 2, CAR: 4 },
       skills: ['Inspiração', 'Sortuda', 'Perdição'],
@@ -165,7 +166,7 @@ export const campaignData = {
       name: 'Grakk',
       race: 'Golem (de Carne)',
       class: 'Druida',
-      level: 3,
+      level: 4,
       deity: 'Panteão',
       attributes: { FOR: 3, DES: -1, CON: 3, INT: -1, SAB: 4, CAR: 1 },
       skills: ['Falar com Espíritos','Controlar Plantas'],
@@ -387,7 +388,7 @@ export const campaignData = {
         },
         {
           id: 'sessao-29',
-          title: '29. Puristas',
+          title: '29. Velmira',
           date: '10/09/2026',
           logText: fullgor_29
         },
@@ -464,6 +465,12 @@ export const campaignData = {
           date: '19/11/2026',
           logText: fullgor_39
         },
+        {
+          id: 'sessao-40',
+          title: '40. Nova Vida',
+          date: '26/11/2026',
+          logText: fullgor_40
+        },
       ]
     }
   ],
@@ -501,6 +508,13 @@ export const campaignData = {
           y: 58,
           title: 'Izmorra',
           description: 'Antiga cidade de anões e medusas, famosa pelo seu artesanato religioso. Foi salva de uma invasão purista pelos campeões de Arsenal.'
+        },
+        {
+          id: 'p5',
+          x: 43.5,
+          y: 56,
+          title: 'Flor-de-Luna',
+          description: 'Uma pequena cidade no meio de um vale cercada por campos floridos. É um local sagrado para Lena, dizem as lendas, e a Deusa por vezes abençoa seus festivais com um emissário sagrado.'
         }
       ]
     },
